@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -11,59 +12,86 @@ a {
   text-decoration: none;
 }
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 .top {
-  height: 1440px;
-  background-image: url(img/backtop.jpg);
+  padding-top: 196px;
+  padding-bottom: 156px;
+  background-color: rgb(225, 255, 143);
+  background-image: url(img/Star_2.png), url(img/Star_3.png), url(img/Star_4.png), url(img/Star_5.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: 68px 98px, 153px 69px, calc(100% - 344px) 525px, calc(100% - 450px) 500px; /* Позиция четвертой звезды */
 }
 .top__head {
-  width: 769px;
-  height: 156px;
   font-weight: 700;
   font-size: 64px;
-  line-height: 100%;
+  line-height: 78px;
   color: rgb(32, 32, 39);
   padding-bottom: 24px;
-  padding-top: 196px;
-  padding-left: 120px;
+  width: 769px;
 }
 .top__text, .games__text {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   width: 720px;
-  height: 64px;
   color: rgb(32, 32, 39);
-  padding-bottom: 48px;
-  padding-left: 120px;
 }
 .top__text_highlight {
   font-weight: 600;
 }
 .top__btn {
-  width: 247px;
-  height: 66px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
-  border-width: 1px;
-  padding-top: 16px;
-  padding-right: 28px;
-  padding-bottom: 16px;
-  padding-left: 28px;
-  border: 1px solid #202027;
-  background: #202027;
-  color: #FFFFFF;
-  font-family: Montserrat;
-  font-weight: 600;
+  background: rgb(32, 32, 39);
+  padding: 16px 65px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: inherit;
   font-size: 24px;
-  line-height: 142%;
-  margin-left: 120px;
-  transition: background-color 0.3s, color 0.3s;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .top__btn:hover {
   background: rgb(255, 255, 255);
   color: rgb(32, 32, 39);
+}
+
+.menu {
+  height: 90px;
+  width: 100%;
+  background-color: rgb(189, 237, 53);
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  overflow: hidden;
+}
+.menu-item {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 27px 51px;
+  white-space: nowrap;
+}
+.menu-item_first {
+  padding-left: 19px;
+}
+.menu-img {
+  width: 36px;
+  height: 36px;
 }
 
 .games {
@@ -78,7 +106,6 @@ a {
   width: 314px;
   height: 78px;
   padding-top: 94px;
-  padding-left: 120px;
   padding-bottom: 24px;
 }
 .games__text {
