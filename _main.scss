@@ -1,0 +1,110 @@
+@import "vars";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    height: 1440px;
+    background-image: url(img/backtop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__head {
+        width: 769px;
+        height: 156px;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 100%;
+        color: $black;
+        padding-bottom: 24px;
+        padding-top: 196px;
+        padding-left: 120px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        width: 720px;
+        height: 64px;
+        color: $black;
+        padding-bottom: 48px;
+        padding-left: 120px;
+        
+
+        &_highlight {
+            font-weight: 600;
+        }
+    }
+
+    &__btn {
+        width: 247px;
+        height: 66px;
+        border-radius: 60px;
+        border-width: 1px;
+        padding-top: 16px;
+        padding-right: 28px;
+        padding-bottom: 16px;
+        padding-left: 28px;
+        border: 1px solid #202027;
+        background: #202027;
+        color: #FFFFFF;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 142%;
+        margin-left: 120px;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background: $white;
+            color: $black;
+        }
+    }
+}
+
+.games {
+    background-color: $black;
+    height: 1470px;
+
+    &__head {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 100%;
+        color: $white;
+        width: 314px;
+        height: 78px;
+        padding-top: 94px;
+        padding-left: 120px;
+        padding-bottom: 24px
+    }
+
+    &__text {
+        @extend .top__text;
+        color: $white;  
+        margin-bottom: 72px;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $greenyellow;
+    height: 150px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+}
+
