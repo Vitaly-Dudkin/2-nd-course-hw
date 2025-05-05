@@ -111,6 +111,9 @@ a {
 .games {
     background-color: $black;
     height: 1470px;
+    background-image: url(img/Star_big.png), url(img/Star_small.png);
+    background-repeat: no-repeat;
+    background-position: 33px 498px, 29PX 439px;
 
     &__head {
         font-weight: 700;

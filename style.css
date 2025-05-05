@@ -97,6 +97,9 @@ a {
 .games {
   background-color: rgb(32, 32, 39);
   height: 1470px;
+  background-image: url(img/Star_big.png), url(img/Star_small.png);
+  background-repeat: no-repeat;
+  background-position: 33px 498px, 29PX 439px;
 }
 .games__head {
   font-weight: 700;
