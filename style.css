@@ -40,8 +40,11 @@ a {
   width: 720px;
   color: rgb(32, 32, 39);
 }
-.top__text_highlight {
+.top__link {
+  font-size: 24px;
   font-weight: 600;
+  line-height: 32px;
+  color: rgb(32, 32, 39);
 }
 .top__btn {
   display: inline-flex;
@@ -104,16 +107,19 @@ a {
 .games__head {
   font-weight: 700;
   font-size: 64px;
-  line-height: 100%;
+  line-height: 78px;
   color: rgb(255, 255, 255);
-  width: 314px;
-  height: 78px;
   padding-top: 94px;
   padding-bottom: 24px;
 }
 .games__text {
   color: rgb(255, 255, 255);
   margin-bottom: 72px;
+}
+.games__img {
+  width: 378;
+  height: 314;
+  border-radius: 30px;
 }
 
 .footer {

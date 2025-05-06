@@ -46,10 +46,13 @@ a {
         line-height: 32px;
         width: 720px;
         color: $black;
+    }
 
-        &_highlight {
-            font-weight: 600;
-        }
+    &__link {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        color: $black;
     }
 
     &__btn {
@@ -118,10 +121,8 @@ a {
     &__head {
         font-weight: 700;
         font-size: 64px;
-        line-height: 100%;
+        line-height: 78px;
         color: $white;
-        width: 314px;
-        height: 78px;
         padding-top: 94px;
         padding-bottom: 24px
     }
@@ -130,6 +131,13 @@ a {
         @extend .top__text;
         color: $white;  
         margin-bottom: 72px;
+    }
+
+    &__img {
+        width: 378;
+        height: 314;
+        border-radius: 30px;
+
     }
 }
 
