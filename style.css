@@ -135,6 +135,10 @@ a {
   color: rgb(255, 255, 255);
   margin-bottom: 72px;
 }
+.games__link:hover {
+  transform: scale(1.08);
+  transition: 0.8s;
+}
 .games__link:nth-child(4), .games__link:nth-child(6) {
   margin-top: -40px; /* Применяем отрицательный отступ только к 4-й и 6-й карточкам */
 }
