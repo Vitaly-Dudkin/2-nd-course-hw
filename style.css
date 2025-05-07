@@ -21,9 +21,9 @@ a {
   padding-top: 196px;
   padding-bottom: 156px;
   background-color: rgb(225, 255, 143);
-  background-image: url(img/Star_2.png), url(img/Star_3.png), url(img/Star_4.png), url(img/Star_5.png);
+  background-image: url(img/Star_2.png), url(img/Star_3.png), url(img/Star_4.png), url(img/Star_5.png), url(img/Vector.png);
   background-repeat: no-repeat;
-  background-position: 68px 98px, 153px 69px, calc(100% - 344px) 525px, calc(100% - 450px) 500px; /* Позиция четвертой звезды */
+  background-position: 98px 109px, 193px 69px, calc(100% - 344px) 525px, calc(100% - 450px) 500px, 100% 0px;
 }
 .top__head {
   font-weight: 700;
@@ -31,7 +31,7 @@ a {
   line-height: 78px;
   color: rgb(32, 32, 39);
   padding-bottom: 24px;
-  width: 769px;
+  width: 768px;
 }
 .top__text, .games__text {
   font-weight: 400;
@@ -97,12 +97,31 @@ a {
   height: 36px;
 }
 
+.game {
+  height: 473px;
+  border-radius: 30px;
+  background: rgb(255, 255, 255);
+}
+.game_big {
+  height: 512px;
+}
+.game_huge {
+  height: 551px;
+}
+
 .games {
   background-color: rgb(32, 32, 39);
   height: 1470px;
-  background-image: url(img/Star_big.png), url(img/Star_small.png);
+  background-image: url(img/Star_big.png), url(img/Star_small.png), url(img/star_about_games.png);
   background-repeat: no-repeat;
-  background-position: 33px 498px, 29PX 439px;
+  background-position: 43px 830px, 29px 760px, 1023px 124px;
+  /* Стили для четных карточек */
+  /* Стили для четных карточек во втором ряду */
+}
+.games__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 .games__head {
   font-weight: 700;
@@ -116,10 +135,42 @@ a {
   color: rgb(255, 255, 255);
   margin-bottom: 72px;
 }
+.games__link:nth-child(4), .games__link:nth-child(6) {
+  margin-top: -40px; /* Применяем отрицательный отступ только к 4-й и 6-й карточкам */
+}
 .games__img {
-  width: 378;
-  height: 314;
+  width: 378px;
+  height: 314px;
   border-radius: 30px;
+}
+.games__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.games__number {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  box-sizing: border-box;
+  width: 110px;
+  height: 36px;
+  border-radius: 52px;
+  background: rgb(247, 247, 247);
+  padding: 9px 15px;
+}
+.games__name {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  margin-bottom: 36px;
+  width: 314px;
 }
 
 .footer {

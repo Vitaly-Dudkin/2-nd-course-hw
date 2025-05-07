@@ -22,13 +22,14 @@ a {
     padding-top: 196px;
     padding-bottom: 156px;
     background-color: $lightyellow;
-    background-image: url(img/Star_2.png), url(img/Star_3.png), url(img/Star_4.png),url(img/Star_5.png);
+    background-image: url(img/Star_2.png), url(img/Star_3.png), url(img/Star_4.png),url(img/Star_5.png), url(img/Vector.png);
     background-repeat: no-repeat;
     background-position: 
-    68px 98px,
-    153px 69px, 
+    98px 109px, 
+    193px 69px, 
     calc(100% - 344px) 525px,
-    calc(100% - 450px) 500px;   /* Позиция четвертой звезды */
+    calc(100% - 450px) 500px,  /* Позиция четвертой звезды */
+    calc(100%) 0px;
 
 
     &__head {
@@ -37,7 +38,7 @@ a {
         line-height: 78px;
         color: $black;
         padding-bottom: 24px;
-        width: 769px;
+        width: 768px;
     }
 
     &__text {
@@ -111,12 +112,34 @@ a {
     }
 }
 
+.game {
+    height: 473px;
+
+    &_big {
+        height: 512px;
+    }
+
+    &_huge {
+        height: 551px;
+    }
+
+    border-radius: 30px;
+    background: $white;
+}
+
 .games {
     background-color: $black;
     height: 1470px;
-    background-image: url(img/Star_big.png), url(img/Star_small.png);
+    background-image: url(img/Star_big.png), url(img/Star_small.png), url(img/star_about_games.png);
     background-repeat: no-repeat;
-    background-position: 33px 498px, 29PX 439px;
+    background-position: 43px 830px, 29px 760px, 1023px 124px;
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+
+    }
 
     &__head {
         font-weight: 700;
@@ -124,7 +147,7 @@ a {
         line-height: 78px;
         color: $white;
         padding-top: 94px;
-        padding-bottom: 24px
+        padding-bottom: 24px;
     }
 
     &__text {
@@ -133,13 +156,61 @@ a {
         margin-bottom: 72px;
     }
 
+    &__link:nth-child(4),
+    &__link:nth-child(6) {
+        margin-top: -40px; /* Применяем отрицательный отступ только к 4-й и 6-й карточкам */
+    }
+
     &__img {
-        width: 378;
-        height: 314;
+        width: 378px;
+        height: 314px;
         border-radius: 30px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+        margin-left: 32px; 
+        margin-right: 32px;
 
     }
+
+    &__number {
+        font-size: 16px;
+        font-weight: 500;
+        color: $black;
+        font-family: inherit;
+        box-sizing: border-box;
+        width: 110px;
+        height: 36px;
+        border-radius: 52px;
+        background: rgb(247, 247, 247);
+        padding: 9px 15px;
+    }
+
+    &__name {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        color: $black;
+        font-family: inherit;
+        margin-bottom: 36px;
+        width: 314px;
+    }
+
+    /* Стили для четных карточек */
+    // &__link:nth-child(2n) {
+    //     transform: translateY(20px); /* Сдвиг вниз для четных карточек в первом ряду */
+    // }
+
+    /* Стили для четных карточек во втором ряду */
+    // &__link:nth-child(6n + 2) {
+    //     transform: translateY(-20px); /* Сдвиг вверх для четных карточек во втором ряду */
+    // }
 }
+
 
 .footer {
     display: flex;
