@@ -31,13 +31,11 @@ a {
   line-height: 78px;
   color: rgb(32, 32, 39);
   padding-bottom: 24px;
-  width: 768px;
 }
 .top__text, .games__text {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  width: 720px;
   color: rgb(32, 32, 39);
 }
 .top__link {
@@ -186,4 +184,61 @@ a {
   font-weight: 600;
   font-size: 24px;
   line-height: 100%;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    align-self: center;
+  }
+  .top {
+    background-color: rgb(225, 255, 143);
+    background-image: url(img/Star_mob.png), url(img/Star_mob_2.png), url(img/Star_mob_3.png), url(img/Star_mob_4.png), url(img/Vector_mob.png);
+    background-repeat: no-repeat;
+    background-position: 61px 135px, 120px 79px, calc(100% - 124px) 600px, calc(100% - 70px) 630px, 100% 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .top__head {
+    font-size: 40px;
+    line-height: 49px;
+    width: 262px;
+  }
+  .top__text, .games__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .top__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .top__btn {
+    margin-top: 36px;
+  }
+  .menu {
+    height: 51px;
+    width: auto;
+  }
+  .menu-item {
+    font-size: 16px;
+  }
+  .menu-img {
+    width: 18px;
+    height: 18px;
+  }
+  .games {
+    display: none;
+  }
+  .footer {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
