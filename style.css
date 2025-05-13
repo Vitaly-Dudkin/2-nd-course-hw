@@ -199,6 +199,7 @@ a {
   border-radius: 30px;
   background: rgb(255, 255, 255);
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  overflow: hidden;
 }
 .mini-games__card:nth-child(2), .mini-games__card:nth-child(4), .mini-games__card:nth-child(6) {
   flex-direction: row-reverse;
