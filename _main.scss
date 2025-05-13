@@ -31,7 +31,6 @@ a {
     calc(100% - 450px) 500px,  /* Позиция четвертой звезды */
     calc(100%) 0px;
 
-
     &__head {
         font-weight: 700;
         font-size: 64px;
@@ -71,8 +70,6 @@ a {
         font-weight: 600;
         cursor: pointer;
         transition: all 0.3s ease;
-
-
         &:hover {
             background: $white;
             color: $black;
@@ -176,7 +173,6 @@ a {
         margin-top: 32px;
         margin-left: 32px; 
         margin-right: 32px;
-
     }
 
     &__number {
@@ -201,18 +197,82 @@ a {
         margin-bottom: 36px;
         width: 314px;
     }
-
-    /* Стили для четных карточек */
-    // &__link:nth-child(2n) {
-    //     transform: translateY(20px); /* Сдвиг вниз для четных карточек в первом ряду */
-    // }
-
-    /* Стили для четных карточек во втором ряду */
-    // &__link:nth-child(6n + 2) {
-    //     transform: translateY(-20px); /* Сдвиг вверх для четных карточек во втором ряду */
-    // }
 }
 
+.mini-games {
+    background-color: $black;   
+    background-image: url(img/Star_big.png), url(img/Star_small.png);
+    background-repeat: no-repeat;
+    background-position: 1383px 60px, 1329px 20px, 1023px 124px;
+    padding-bottom: 144px;
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__head {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: $white;
+        padding-bottom: 40px;
+    }
+
+    &__card{
+        height: 500px;
+        display: flex    ;
+        justify-content: space-between;
+        border-radius: 30px;
+        background: $white;
+        box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    }
+
+    &__card:nth-child(2),
+    &__card:nth-child(4),
+    &__card:nth-child(6) {
+        flex-direction: row-reverse;
+    }
+
+    &__content {
+        padding: 48px;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        padding-bottom: 24px;
+    }
+
+    &__desc {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-bottom: 36px;
+    }
+
+    &__button {
+        width: 247px;
+        height: 66px;
+        border-radius: 60px;
+        background: $black;
+        font-size: 24px;
+        font-weight: 600;
+        color: $white;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: $white;
+            color: $black;
+        }
+    }
+
+    &__img {
+        height: 100%;
+    }
+}
 
 .footer {
     display: flex;
