@@ -303,9 +303,48 @@ a {
   }
   .mini-games {
     width: auto;
+    padding-bottom: 49px;
   }
   .mini-games__head {
     font-size: 40px;
+    line-height: 100%;
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
+  .mini-games__card {
+    flex-direction: column-reverse;
+    height: 529px;
+  }
+  .mini-games__card:nth-child(2), .mini-games__card:nth-child(4), .mini-games__card:nth-child(6) {
+    flex-direction: column-reverse;
+  }
+  .mini-games__card:nth-child(1), .mini-games__card:nth-child(4) {
+    height: 529px;
+  }
+  .mini-games__card:nth-child(2), .mini-games__card:nth-child(3) {
+    height: 568px;
+  }
+  .mini-games__card:nth-child(5) {
+    height: 607px;
+  }
+  .mini-games__card:nth-child(6) {
+    height: 627px;
+  }
+  .mini-games__content {
+    padding: 29px;
+  }
+  .mini-games__title {
+    font-size: 32px;
+    padding-bottom: 16px;
+    line-height: 100%;
+  }
+  .mini-games__desc {
+    font-size: 16px;
+    padding-bottom: 32px;
+    line-height: 100%;
+  }
+  .mini-games__img {
+    width: 100%;
   }
   .footer {
     width: 100%;
