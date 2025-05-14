@@ -109,7 +109,7 @@ a {
 
 .games {
   background-color: rgb(32, 32, 39);
-  height: 1470px;
+  padding-bottom: 96px;
   background-image: url(img/Star_big.png), url(img/Star_small.png), url(img/star_about_games.png);
   background-repeat: no-repeat;
   background-position: 43px 830px, 29px 760px, 1023px 124px;
