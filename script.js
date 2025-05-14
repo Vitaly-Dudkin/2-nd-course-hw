@@ -22,7 +22,7 @@ alert(`${y} / ${x} = ${y / x}`)
 
 // task - 5 
 result = 2 ** 5
-alert(result, 'task - 5')
+alert(`2 ** 5 = ${result}`)
 
 // task - 6 
 let q = 9 
@@ -51,5 +51,5 @@ const user = {
 }
 
 // taks - 10 
-let userName = prompt('Введите ваше имя')
+let userName = String(prompt('Введите ваше имя'))
 alert(`Привет, ${userName}`)
