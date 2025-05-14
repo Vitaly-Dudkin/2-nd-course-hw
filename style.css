@@ -190,7 +190,7 @@ a {
   font-size: 64px;
   line-height: 78px;
   color: rgb(255, 255, 255);
-  padding-bottom: 40px;
+  padding-bottom: 72px;
 }
 .mini-games__card {
   height: 500px;
@@ -268,7 +268,7 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: auto;
   }
   .top__head {
     font-size: 40px;
@@ -300,6 +300,12 @@ a {
   }
   .games {
     display: none;
+  }
+  .mini-games {
+    width: auto;
+  }
+  .mini-games__head {
+    font-size: 40px;
   }
   .footer {
     width: 100%;

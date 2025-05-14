@@ -27,7 +27,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 100%;
+        width: auto;
         
 
         &__head {
@@ -55,7 +55,7 @@
         height: 51px;
         width: auto;
         display: none;
-        
+
         &-item {
             font-size: 16px;
         }
@@ -68,6 +68,14 @@
 
     .games {
         display: none;
+    }
+
+    .mini-games {
+        width: auto;
+
+        &__head {
+            font-size: 40px;
+        }
     }
 
     .footer {
