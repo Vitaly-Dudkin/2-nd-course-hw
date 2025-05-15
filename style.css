@@ -347,6 +347,6 @@ a {
     width: 100%;
   }
   .footer {
-    width: 100%;
+    box-sizing: border-box;
   }
 }/*# sourceMappingURL=style.css.map */
