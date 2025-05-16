@@ -1,0 +1,137 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .button {
+        width: 285px;
+        height: 55px;
+        font-size: 16px;
+        align-self: center;
+    }
+
+    .top {
+        background-color: $lightyellow;
+        background-image: url(img/Star_mob.png), url(img/Star_mob_2.png), url(img/Star_mob_3.png),url(img/Star_mob_4.png), url(img/Vector_mob.png);
+        background-repeat: no-repeat;
+        background-position: 
+        61px 135px, 
+        120px 79px, 
+        calc(100% - 124px) 600px,
+        calc(100% - 70px) 630px, /* Позиция четвертой звезды */
+        calc(100%) 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        
+
+        &__head {
+            font-size: 40px;
+            line-height: 49px;
+            width: 262px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__link {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__btn {
+            margin-top: 36px;
+        }
+    }
+
+    .menu {
+        height: 51px;
+        width: auto;
+        display: none;
+
+        &-item {
+            font-size: 16px;
+        }
+
+        &-img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .games {
+        display: none;
+    }
+
+    .mini-games {
+        width: auto;
+        padding-bottom: 49px;
+
+        &__head {
+            font-size: 40px;
+            line-height: 100%;
+            padding-bottom: 48px;
+            padding-top: 48px;
+        }
+
+        &__card {
+            flex-direction: column-reverse;
+            height: 529px;
+        }
+
+        &__card:nth-child(2),
+        &__card:nth-child(4),
+        &__card:nth-child(6) {
+            flex-direction: column-reverse;
+        }
+
+        &__card:nth-child(1),
+        &__card:nth-child(4) {
+            height: 529px;;
+        }
+
+        &__card:nth-child(2),
+        &__card:nth-child(3) {
+            height: 568px;
+        }
+
+        &__card:nth-child(5) {
+            height: 607px;
+        }
+
+        &__card:nth-child(6) {
+            height: 627px;
+        }
+
+        &__content {
+            padding: 29px;
+        }
+
+        &__title {
+            font-size: 32px;
+            padding-bottom: 16px;
+            line-height: 100%;
+        }
+
+        &__desc {
+            font-size: 16px;
+            padding-bottom: 32px;
+            line-height: 100%;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        box-sizing: border-box
+    }
+}
