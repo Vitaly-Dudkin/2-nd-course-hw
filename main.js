@@ -11,8 +11,6 @@ function compareNumbers() {
 
     while (userNumber !== randomNumber) {
         userNumber = Number(prompt('Введите число от 1 до 100')); // Запрос числа у пользователя
-        console.log(userNumber)
-        console.log(randomNumber)
 
         if (userNumber === 0) {
             alert('Игра окончена. Спасибо за участие!');
