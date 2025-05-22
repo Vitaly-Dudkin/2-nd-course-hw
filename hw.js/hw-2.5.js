@@ -98,12 +98,12 @@ function getPerimeter() {
 
 const circle = {
     radius: 5,
-    getArea: getAge,
+    getArea: getArea,
     getPerimeter: getPerimeter,
 };
 
 const circle2 = {
     radius: 5,
-    getArea: getAge,
+    getArea: getArea,
     getPerimeter: getPerimeter,
 };
