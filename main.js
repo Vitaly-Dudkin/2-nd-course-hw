@@ -59,10 +59,10 @@ function generateTask() {
                 num2 = smallerNum; // Делитель
             }
 
-            let userAnswer = prompt(`Сколько будет ${num1} ${operation} ${num2}? - (введите 'exit' для выхода))`); // Запрос ответа у пользователя
+            let userAnswer = prompt(`Сколько будет ${num1} ${operation} ${num2}? - (введите 'выход' для выхода))`); // Запрос ответа у пользователя
 
             // Проверка на выход
-            if (userAnswer.toLowerCase() === 'exit') {
+            if (userAnswer.toLowerCase() === 'выход') {
                 alert('Вы вышли из игры. Спасибо за участие!');
                 return; // Завершение функции
             }
