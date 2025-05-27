@@ -119,11 +119,11 @@ function formatDate(date) {
     const year = date.getFullYear();
     const dayOfWeek = daysOfWeek[date.getDay()];
     
-    const hours = String(date.getHours()).padStart(2, '0');
-    const minutes = String(date.getMinutes()).padStart(2, '0');
-    const seconds = String(date.getSeconds()).padStart(2, '0');
+    // Используем toLocaleTimeString для форматирования времени
+    const options = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    const timeString = date.toLocaleTimeString('ru-RU', options);
     
-    return `Дата: ${day} ${month} ${year} — это ${dayOfWeek}.\nВремя: ${hours}:${minutes}:${seconds}`;
+    return `Дата: ${day} ${month} ${year} — это ${dayOfWeek}.\nВремя: ${timeString}`;
 }
 
 // Пример использования
