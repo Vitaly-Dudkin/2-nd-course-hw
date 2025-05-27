@@ -102,7 +102,12 @@ function generateTask() {
 // hw-2.7 Встроенные объекты
 // game - 3
 function reverseText() {
-    let userText = prompt('Введите слово, которое хотите перевернуть');
+    let userText = prompt('Введите слово, которое хотите перевернуть или "выход" если хотите завершить игру');
+
+    if (userText.toLowerCase() === 'выход') {
+        alert('Вы вышли из игры. Спасибо за участие!');
+        return; // Завершение функции
+    }
 
     // Проверяем, что введенный текст не является числом
     if (isNaN(userText)) {
@@ -160,6 +165,9 @@ function startQuiz() {
             } else {
                 alert(`Не верно. Правильный ответ: ${questionObj.options[questionObj.correctAnswer - 1]}`);
             }
+        } else {
+            alert('Вы вышли из игры. Спасибо за участие!');
+            return; // Завершение функции
         }
     }
 
