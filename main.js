@@ -176,9 +176,28 @@ function startQuiz() {
 }
 
 
+// game - 5
+// Игра «Камень, ножницы, бумага»
+// Описание: создайте игру «Камень, ножницы, бумага», где пользователь играет против компьютера.
 
+function paperScissorsRock() {
+    let userChoice = prompt('Введите "камень", "ножницы" или "бумага"').toLocaleLowerCase()
+    const array = ["камень", "ножницы", "бумага"]
+    let randomIndex = Math.floor(Math.random() * array.length)
+    let computerChoice = array[randomIndex]
 
-
+    if (userChoice === computerChoice) {
+        alert(`Ничья - комьютер выбрал ${computerChoice}`) ;
+    } else if (
+        (userChoice === "камень" && computerChoice === "ножницы") ||
+        (userChoice === "ножницы" && computerChoice === "бумага") ||
+        (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+        alert(`Победа - комьютер выбрал ${computerChoice}`) ;
+    } else {
+        alert(`Поражение - комьютер выбрал ${computerChoice}`) ;
+    }
+}
 
 
    
