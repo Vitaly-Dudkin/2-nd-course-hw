@@ -228,6 +228,7 @@ a {
   font-weight: 600;
   color: rgb(255, 255, 255);
   transition: 0.3s ease;
+  font-family: inherit;
 }
 .mini-games__button:hover {
   background: rgb(255, 255, 255);
