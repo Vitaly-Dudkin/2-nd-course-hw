@@ -114,22 +114,30 @@ btn5.addEventListener('click', () => {
 // Используйте appendChild для добавления нового элемента в конец документа при нажатии на кнопку Как должно работать: 
 // нажатие на кнопку «Добавить элемент» добавляет в конец страницы новый абзац с текстом «Новый абзац».
 
-const contentEL = document.querySelector('.content')
+const contentEL6 = document.querySelector('.content6')
 const btn6 = document.querySelector('.btn6')
 
 
 btn6.addEventListener('click', () => {
     const textEl6 = document.createElement('p');
     textEl6.textContent = 'Новый абзац'
-    textEl6.classList.add('description')
+    textEl6.classList.add('description6')
 
-    contentEL.append(textEl6)
+    contentEL6.append(textEl6)
 })
 
 
 // Задание 7. Удаление элемента
 // Задача: создайте кнопку, которая удаляет первый элемент <p> с классом description.
-// Инструкция: В HTML создайте несколько абзацев <p , некоторые из них должны иметь класс descriptio .
-// Используйте метод querySelector для поиска первого элемента с классом description.
+// Инструкция: В HTML создайте несколько абзацев <p , некоторые из них должны иметь класс description
+// // Используйте метод querySelector для поиска первого элемента с классом description.
 // Используйте метод remove для удаления этого элемента при нажатии на кнопку.
 // Как должно работать: нажатие на кнопку «Удалить элемент» удаляет первый абзац с классом description со страницы.
+
+const contentEL7 = document.querySelector('.content7');
+const textEl7 = document.querySelector('.description7');
+const btn7 = document.querySelector('.btn7');
+
+btn7.addEventListener('click', () => {
+    textEl7.remove();
+})
