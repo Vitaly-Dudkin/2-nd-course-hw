@@ -205,4 +205,25 @@ function paperScissorsRock() {
         alert(`Поражение - компьютер выбрал ${computerChoice}`);
     }
 }
-   
+
+
+// game - 6
+// Генератор случайных цветов
+// Описание: При каждом клике на кнопку фон страницы меняется на случайный цвет.
+
+document.addEventListener('DOMContentLoaded', () => {
+    const btn6 = document.querySelector('.button6');
+
+    btn6.addEventListener('click', () => {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        console.log(color);
+        document.querySelector('.mini-games').style.backgroundColor = color;
+        document.querySelector('.games').style.backgroundColor = color;
+        document.querySelector('.top').style.backgroundColor = color;
+
+    });
+});
